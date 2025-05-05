@@ -33,4 +33,4 @@ A simple web-based task management application that lets you add, edit, complete
 - No frameworks used – just HTML, CSS, and JavaScript.
 
 ---
-for Visited : [live](https://oumaralhammadi.github.io/to_do_list/)
+for Visited : [live preview](https://oumaralhammadi.github.io/to_do_list/)
