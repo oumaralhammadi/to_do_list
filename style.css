@@ -1,0 +1,147 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #cbd5e1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task .text h4 {
+  margin: 0;
+}
+
+.task .text p {
+  margin: 2px 0 0;
+  color: #64748b;
+  font-size: 0.9em;
+}
+
+.task .actions button {
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn-check {
+  background-color: #22c55e;
+}
+.btn-edit {
+  background-color: #0ea5e9;
+}
+.btn-undo {
+  background-color: #facc15;
+  color: black;
+}
+.btn-delete {
+  background-color: #ef4444;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #22c55e;
+  color: white;
+}
+.btn-close {
+  background-color: #ef4444;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 20px;
+}

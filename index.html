@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My ToDo List</h1>
+      <div class="filters">
+        <button class="filter-btn active" onclick="setFilter('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="setFilter('done')">Done</button>
+        <button class="filter-btn" onclick="setFilter('undone')">Undone</button>
+      </div>
+      <div id="task-list"></div>
+      <button class="add-btn" onclick="openModal()">Add Task</button>
+    </div>
+    <!-- Modal for adding tasks -->
+    <div id="task-modal" class="modal">
+      <div class="modal-content">
+        <h3>Add New Task</h3>
+        <input type="text" id="task-name" placeholder="Task Title" />
+        <input type="text" id="task-desc" placeholder="Task Description" />
+        <button class="btn-save" onclick="addTask()">Save</button>
+        <button class="btn-close" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
